@@ -1,4 +1,20 @@
 ---
+- name: Install awscli 
+  pip: name=awscli state=present
+  become: true
+
+- name: Install boto for ansible dependencies
+  become: true
+  pip: name=boto state=present  
+
+- name: Install boto3
+  become: true
+  pip: name=boto3 state=present  
+
+- name: Install botocore
+  become: true
+  pip: name=botocore state=present
+
 - name: Install zlib
   become: true
   yum: name=zlib-1.2.7 state=present
