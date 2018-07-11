@@ -1,0 +1,89 @@
+---
+- name: Install zlib
+  become: true
+  yum: name=zlib-1.2.7 state=present
+
+- name: Install libffi
+  become: true
+  yum: name=libffi state=present
+
+- name: Install lsof
+  become: true
+  yum: name=lsof state=present
+
+- name: Install perl
+  become: true
+  yum: name=perl state=present
+
+- name: Install tar
+  become: true
+  yum: name=tar state=present
+
+- name: Install gzip
+  become: true
+  yum: name=gzip-1.5 state=present
+
+- name: Install curl
+  become: true
+  yum: name=curl-7.29.0 state=present
+
+- name: Install make
+  become: true
+  yum: name=make state=present
+
+- name: Install sudo
+  become: true
+  yum: name=sudo-1.8.6p7 state=present
+
+- name: Install grep
+  become: true
+  yum: name=grep-2.20 state=present
+
+- name: Install less
+  become: true
+  yum: name=less-458 state=present
+
+- name: Install ksh
+  become: true
+  yum: name=ksh state=present
+
+- name: Install tcsh
+  become: true
+  yum: name=tcsh-6.18.01 state=present
+
+- name: Install Xalan for C
+  become: true
+  yum: name=xalan-c-1.11.0 state=present
+
+- name: Install Xalan for Java
+  become: true
+  yum: name=xalan-j2-2.7.1 state=present
+
+- name: Install OpenSSH
+  become: true
+  yum: name=openssh-6.6.1p1 state=present
+
+- name: Install OpenSSL
+  become: true
+  yum: name=openssl-1.0.1e state=present
+
+- name: Install mailx
+  become: true
+  yum: name=mailx-12.5 state=present
+
+- name: Install expect
+  become: true
+  yum: name=expect-5.45 state=present
+
+- name: Install tomcat
+  become: true
+  yum: name=tomcat state=present
+
+- name: Install puppet
+  become: true
+  yum: name=puppet state=present
+
+- name: Install java-1.8.0-openjdk
+  become: true
+  yum: name=java-1.8.0-openjdk state=present
+
