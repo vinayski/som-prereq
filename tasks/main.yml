@@ -23,6 +23,14 @@
   become: true
   yum: name=libffi state=present
 
+- name: Install libffi-devel
+  become: true
+  yum: name=libffi-devel state=present
+
+- name: Install python-devel
+  become: true
+  yum: name=python-devel state=present   
+
 - name: Install lsof
   become: true
   yum: name=lsof state=present
@@ -103,3 +111,6 @@
   become: true
   yum: name=java-1.8.0-openjdk state=present
 
+- gem:
+    name: hash-deep-merge
+    state: latest  
